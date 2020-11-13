@@ -62,6 +62,10 @@
     border: 1px solid var(--clr-red-soft);
 }
 
+.invalid.message__form + .message__invalid {
+    display: block;
+}
+
 .message__input {
     background: transparent;
     width: 100%;
@@ -106,6 +110,13 @@
 .message__button::before {
     position: absolute;
     content: url('../assets/img/icon-arrow.svg');
+}
+
+.message__invalid {
+    display: none;
+    text-align: left;
+    margin: 10px 0 0 20px;
+    color: var(--clr-red-soft);
 }
 
 /* Message media queries */
