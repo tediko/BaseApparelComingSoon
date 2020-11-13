@@ -78,6 +78,13 @@
     border: none;
     cursor: pointer;
     background: linear-gradient(var(--gr-red-dark));
+    transition: width 250ms ease-in,
+                opacity 250ms ease-in;
+}
+
+.message__button:hover {
+    width: 120px;
+    opacity: 0.8;
 }
 
 .message__button::before {
@@ -153,7 +160,7 @@
     .message__header {
         margin: 0 0 30px 0;
     }
-    
+
     .message__content {
         margin: 0 30px;
     }
@@ -165,5 +172,14 @@
 
     .message__text {
         font-size: 0.875rem;
+    }
+
+    .message__button {
+        width: 70px;
+    }
+
+    .message__button:hover {
+        width: 80px;
+        opacity: 0.8;
     }
 }
