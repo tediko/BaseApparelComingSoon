@@ -1,1 +1,51 @@
 /* Message section */
+.message__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px auto;
+}
+
+.message__hero {
+    grid-row: span 2;
+}
+
+.message__heading {
+    font-size: 3.875rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.1rem;
+    color: var(--clr-red);
+}
+
+.message__span {
+    font-weight: 400;
+    color: var(--clr-red-dark);
+    line-height: 1.1;
+}
+
+.message__text {
+    font-size: 0.98rem;
+    color: var(--clr-red);
+    max-width: 440px;
+    line-height: 1.8;
+    letter-spacing: 0.01rem;
+    margin-top: 23px;
+}
+
+.message__input {
+    background: transparent;
+    max-width: 440px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid var(--clr-red);
+    border-radius: 40px;
+    padding-left: 33px;
+}
+
+.message__input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--clr-red);
+    font-size: 1rem;
+}
+
+.
