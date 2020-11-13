@@ -13,6 +13,10 @@
     grid-row: span 2;
 }
 
+.message__img-mobile {
+    display: none;
+}
+
 .message__content {
     margin: 30px 0 0 127px;
 }
@@ -79,4 +83,87 @@
 .message__button::before {
     position: absolute;
     content: url('../assets/img/icon-arrow.svg');
+}
+
+/* Message media queries */
+@media (max-width: 1200px) {
+    .message {
+        overflow: hidden;
+    }
+
+    .message__hero {
+        align-self: center;
+        padding: 0 20px;
+    }
+
+    .message__hero img {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .message__wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+
+    .message__header {
+        margin: 0 0 30px 30px;
+        justify-self: flex-start;
+        transform: scale(0.7);
+    }
+
+    .message__hero {
+        padding: 0;
+    }
+
+    .message__hero img {
+        width: 100%;
+    }
+
+    .message__content {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .message__heading {
+        font-size: 3rem;
+    }
+
+    .message__text {
+        font-size: 0.95rem;
+    }
+
+    .message__img-desktop {
+        display: none;
+    }
+
+    .message__img-mobile {
+        display: block;
+        margin: 0 0 66px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .message__wrapper {
+        margin: 0;
+    }
+
+    .message__header {
+        margin: 0 0 30px 0;
+    }
+    
+    .message__content {
+        margin: 0 30px;
+    }
+
+    .message__heading {
+        font-size: 2.5rem;
+        letter-spacing: 0.9rem
+    }
+
+    .message__text {
+        font-size: 0.875rem;
+    }
 }
