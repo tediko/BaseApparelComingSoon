@@ -6,8 +6,8 @@
         --clr-red: hsl(0, 36%, 70%);
         --clr-red-soft: hsl(0, 93%, 68%);
         --clr-red-dark: hsl(0, 6%, 24%);
-        --gr-red-light: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-        --gr-red-dark: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+        --gr-red-light: 135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%;
+        --gr-red-dark: 135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%;
 }
 
 /* Global styles */
@@ -22,8 +22,16 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Josefin Sans', sans-serif;
     min-height: 100vh;
+    background: url('../assets/img/bg-pattern-desktop.svg'), linear-gradient(var(--gr-red-light));
+    background-repeat: no-repeat;
 }
 
 /* Utilities */
+.container {
+    max-width: 1400px;
+}
