@@ -25,3 +25,11 @@
     text-decoration: underline;
     opacity: 1;
 }
+
+/* Footer media queries */
+@media (min-width: 1200px) {
+    .footer {
+        left: 25%;
+        transform: translateX(-25%);
+    }
+}
