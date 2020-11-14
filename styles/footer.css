@@ -1,0 +1,27 @@
+/* Footer section */
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--clr-red);
+    font-size: 1rem;
+}
+
+.footer__attribution {
+    text-align: center;
+}
+
+.footer a {
+    color: var(--clr-red-dark);
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 250ms ease-in;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
