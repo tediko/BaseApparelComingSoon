@@ -7,6 +7,8 @@ const validateEmail = () => {
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (!emailRegex.test(input.value) || input.value == '') {
         form.classList.add('invalid');
+    } else {
+        form.submit();
     }
 }
 
