@@ -124,6 +124,7 @@
     border: none;
     cursor: pointer;
     background: linear-gradient(var(--gr-red-dark));
+    box-shadow: 2px 5px 16px 0 var(--clr-red);
     transition: width 250ms ease-in,
                 opacity 250ms ease-in;
 }
@@ -147,10 +148,6 @@
 
 /* Message media queries */
 @media (max-width: 1200px) {
-    .message {
-        overflow: hidden;
-    }
-
     .message__hero {
         align-self: center;
         padding: 0 20px;
