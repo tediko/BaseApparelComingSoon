@@ -18,3 +18,9 @@ submitBtn.addEventListener('click', validateEmail);
 input.addEventListener('invalid', (event) => {
     event.preventDefault()
 })
+
+// Disable form submit on keydown and evoke validateEmail funcion.
+form.addEventListener('keydown', (event) => {
+    let enterKeyCode = 13;
+    event.keyCode === enterKeyCode ? (event.preventDefault(), validateEmail()) : false;
+});
