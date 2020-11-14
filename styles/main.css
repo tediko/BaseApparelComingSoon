@@ -50,6 +50,7 @@ body {
 /* Global media queries */
 @media (max-width: 900px) {
     body {
-        margin: 40px 0;
+        position: relative;
+        padding: 40px 0 100px 0;
     }
 }
