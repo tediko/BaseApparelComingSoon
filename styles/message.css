@@ -35,6 +35,31 @@
     line-height: 1.1;
 }
 
+.message__anim--1 {
+    animation: headingSlide 1000ms forwards;
+    display: inline-block;
+}
+
+.message__anim--2 {
+    animation: headingSlide 1000ms forwards;
+    animation-delay: 250ms;
+    display: inline-block;
+    opacity: 0;
+}
+
+.message__anim--3 {
+    animation: headingSlide 1000ms forwards;
+    animation-delay: 500ms;
+    display: inline-block;
+    opacity: 0;
+}
+
+[data-anim] {
+    animation: opacity 2000ms forwards;
+    animation-delay: 500ms;
+    opacity: 0;
+}
+
 .message__text {
     font-size: 0.98rem;
     color: var(--clr-red);
