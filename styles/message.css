@@ -13,10 +13,6 @@
     grid-row: span 2;
 }
 
-.message__img-mobile {
-    display: none;
-}
-
 .message__content {
     margin: 30px 0 0 127px;
 }
@@ -176,7 +172,9 @@
     }
 
     .message__hero img {
+        display: block;
         width: 100%;
+        margin: 0 0 66px 0;
     }
 
     .message__content {
@@ -192,14 +190,6 @@
         font-size: 0.95rem;
     }
 
-    .message__img-desktop {
-        display: none;
-    }
-
-    .message__img-mobile {
-        display: block;
-        margin: 0 0 66px 0;
-    }
 }
 
 @media (max-width: 480px) {
