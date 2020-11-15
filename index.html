@@ -16,8 +16,11 @@
           <img src="assets/img/logo.svg" alt="Base Apparel logo">
         </header>
         <div class="message__hero" data-anim>
-          <img src="assets/img/hero-desktop.jpg" class="message__img-desktop" alt="Woman image">
-          <img src="assets/img/hero-mobile.jpg" class="message__img-mobile" alt="Woman image">
+          <picture>
+            <source media="(max-width: 899px)" srcset="assets/img/hero-mobile.jpg">
+            <source media="(min-width: 900px)" srcset="assets/img/hero-desktop.jpg">
+            <img src="assets/img/hero-desktop.jpg" alt="Woman image">
+          </picture>
         </div>
         <div class="message__content">
           <h1 class="message__heading"><span class="message__anim--1">We're</span><br><span class="message__span"><span class="message__anim--2">coming</span><br><span class="message__anim--3">soon</span></span></h1>
