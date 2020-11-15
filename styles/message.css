@@ -85,7 +85,7 @@
 }
 
 .invalid.message__form + .message__invalid {
-    display: block;
+    visibility: visible;
 }
 
 .message__input {
@@ -136,7 +136,7 @@
 }
 
 .message__invalid {
-    display: none;
+    visibility: hidden;
     text-align: left;
     margin: 10px 0 0 20px;
     color: var(--clr-red-soft);
